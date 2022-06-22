@@ -3,4 +3,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 640px) {
+  .categories-container {
+    display: block;
+  }
 }

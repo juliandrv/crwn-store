@@ -6,7 +6,6 @@
   align-items: center;
   justify-content: center;
   border: 1px solid black;
-  margin: 0 7.5px 15px;
   overflow: hidden;
 
   &:hover {
@@ -24,14 +23,6 @@
 
   &.large {
     height: 380px;
-  }
-
-  &:first-child {
-    margin-right: 7.5px;
-  }
-
-  &:last-child {
-    margin-left: 7.5px;
   }
 
   .background-image {
@@ -64,5 +55,11 @@
       font-weight: lighter;
       font-size: 16px;
     }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .category-container {
+    margin-bottom: 20px;
   }
 }
