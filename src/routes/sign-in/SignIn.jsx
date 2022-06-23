@@ -1,3 +1,5 @@
+import { Button } from '../../components/button/Button';
+import { SignUpForm } from '../../components/signUpForm/SignUpForm';
 import {
   signInWithGooglePopup,
   createUserDocumentFromAuth,
@@ -12,7 +14,12 @@ export const SignIn = () => {
   return (
     <>
       <h1>Sign In</h1>
-      <button onClick={logGoogleUser}>Sign In with Google</button>
+
+      <Button buttonType='google' onClick={logGoogleUser}>
+        Sign In with Google Popup
+      </Button>
+
+      <SignUpForm />
     </>
   );
 };
